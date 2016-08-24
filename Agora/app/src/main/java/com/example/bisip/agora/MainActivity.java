@@ -18,24 +18,24 @@ public class MainActivity extends AppCompatActivity {
         getWindow().getDecorView().setBackgroundColor(Color.WHITE);
 
         ourSong = MediaPlayer.create(MainActivity.this, R.raw.seikilosepitaph);
+        ourSong.setLooping(true);
         ourSong.start();
     }
 
     protected void onPause(){
         super.onPause();
         ourSong.pause();
-        //ourSong.release();
     }
 
     protected void showPlay(View view){
         Intent intent = new Intent(this, PlayActivity.class);
-        onPause();
+        ourSong.stop();
         startActivity(intent);
     }
 
     protected void showHelp(View view){
         Intent intent = new Intent(this, HelpActivity.class);
-        //onPause();
+        ourSong.stop();
         startActivity(intent);
     }
 
