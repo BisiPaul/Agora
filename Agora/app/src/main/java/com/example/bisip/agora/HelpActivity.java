@@ -33,7 +33,7 @@ public class HelpActivity extends AppCompatActivity {
 
     public void onBackPressed() {
         ourSong.stop();
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+
+        super.onBackPressed();
     }
 }
