@@ -11,36 +11,47 @@
     android:backgroundTint="#802727">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/help"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:id="@+id/button"
         android:layout_below="@+id/button3"
         android:layout_toStartOf="@+id/button3"
         android:layout_marginTop="108dp"
         android:onClick="showHelp"
+        android:background="@drawable/helpbutton"
         />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/exit"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:id="@+id/button2"
         android:layout_alignTop="@+id/button"
         android:layout_toEndOf="@+id/button3"
         android:onClick="showExit"
+        android:background="@drawable/exitbutton"
         />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/play"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:id="@+id/button3"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:singleLine="true"
         android:onClick="showPlay"
+        android:background="@drawable/playbutton"
+
         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignRight="@+id/button2"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/agora_logo"/>
 
 
 </RelativeLayout>

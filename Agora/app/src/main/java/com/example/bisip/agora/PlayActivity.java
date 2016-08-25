@@ -1,5 +1,5 @@
 package com.example.bisip.agora;
-
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -9,5 +9,6 @@ public class PlayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+        getWindow().getDecorView().setBackgroundColor(Color.WHITE);
     }
 }
