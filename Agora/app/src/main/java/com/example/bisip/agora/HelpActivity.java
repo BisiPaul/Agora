@@ -15,6 +15,7 @@ public class HelpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
         getWindow().getDecorView().setBackgroundColor(Color.WHITE);
+
         TextView tx = (TextView)findViewById(R.id.textView);
         Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/Caesar.ttf");
         tx.setTypeface(custom_font);

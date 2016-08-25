@@ -8,14 +8,17 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     MediaPlayer ourSong;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getWindow().getDecorView().setBackgroundColor(Color.WHITE);
+
         ourSong = MediaPlayer.create(MainActivity.this, R.raw.seikilosepitaph);
         ourSong.start();
     }
+
     protected void onPause(){
         super.onPause();
         ourSong.pause();

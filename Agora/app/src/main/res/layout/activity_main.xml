@@ -10,6 +10,16 @@
     tools:context="com.example.bisip.agora.MainActivity"
     android:backgroundTint="#802727">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignRight="@+id/button2"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/agora_logo"/>
+
     <Button
         android:layout_width="80dp"
         android:layout_height="50dp"
@@ -43,15 +53,7 @@
 
         />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_above="@+id/button3"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignRight="@+id/button2"
-        android:layout_marginBottom="80dp"
-        android:src="@drawable/agora_logo"/>
+
 
 
 </RelativeLayout>
