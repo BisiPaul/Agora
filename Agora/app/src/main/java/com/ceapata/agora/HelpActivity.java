@@ -8,6 +8,7 @@ import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,8 @@ public class HelpActivity extends AppCompatActivity {
         tx_body.setTypeface(custom_font_body);
         tx_body.setGravity(Gravity.CENTER); //Aligns the text vertically and horizontally
 
+        tx_body.setMovementMethod(new ScrollingMovementMethod());
+
         ourSong = MediaPlayer.create(HelpActivity.this, R.raw.seikilosepitaph);
         ourSong.setLooping(true);
         ourSong.start();
@@ -39,7 +42,6 @@ public class HelpActivity extends AppCompatActivity {
 
     public void onBackPressed() {
         ourSong.stop();
-
         super.onBackPressed();
     }
 }

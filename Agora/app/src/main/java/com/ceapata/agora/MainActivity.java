@@ -1,5 +1,6 @@
 package com.ceapata.agora;
 import android.graphics.Color;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.content.Intent;
 import android.graphics.Color;
@@ -23,9 +24,18 @@ public class MainActivity extends AppCompatActivity {
         ourSong.start();
     }
 
+    @Override
     protected void onPause(){
         super.onPause();
-        ourSong.pause();
+        ourSong.stop();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        ourSong = MediaPlayer.create(MainActivity.this, R.raw.seikilosepitaph);
+        ourSong.setLooping(true);
+        ourSong.start();
     }
 
     protected void showPlay(View view){
@@ -44,5 +54,4 @@ public class MainActivity extends AppCompatActivity {
         finish();
         System.exit(0);
     }
-
 }

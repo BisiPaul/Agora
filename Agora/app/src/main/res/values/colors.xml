@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="indigo">#3F48CC</color>
+    <color name="colorTitle">#ffffff</color>
     <color name="orange">#FF6600</color>color>
+
 </resources>
