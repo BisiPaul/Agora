@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.ceapata.agora.MainActivity"
+    tools:context="com.example.bisip.agora.MainActivity"
     android:backgroundTint="#802727">
 
     <ImageView
@@ -52,7 +52,6 @@
         android:background="@drawable/playbutton"
         />
 
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,5 +62,8 @@
         android:layout_marginBottom="80dp"
         android:src="@drawable/agora_logo"
         />
+
+
+
 
 </RelativeLayout>

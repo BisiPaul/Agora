@@ -7,18 +7,59 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.bisip.agora.VoteActivity">
+    tools:context="com.ceapata.agora.VoteActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:id="@+id/linearlayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAlignment="center"
+        android:id="@+id/textViewTitle"
+        android:textSize="75sp"
+        android:textColor="@color/indigo"
+        android:layout_gravity="center"
+        />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:id="@+id/likebutton"
+        android:background="@drawable/likebutton"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="50dp"
+
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:id="@+id/dislikebutton"
+        android:background="@drawable/dislikebutton"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="50dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Let's vote!"
-        android:id="@+id/textView2"
-        android:textSize="60dp"
-        android:textAlignment="gravity"
-        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp"
+        android:id="@+id/timer"
+        android:textColor="@color/orange"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginBottom="106dp" />
+
+
 
 </RelativeLayout>

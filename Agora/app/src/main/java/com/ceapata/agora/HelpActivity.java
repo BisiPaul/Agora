@@ -1,4 +1,4 @@
-package com.example.bisip.agora;
+package com.ceapata.agora;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -39,6 +39,7 @@ public class HelpActivity extends AppCompatActivity {
 
     public void onBackPressed() {
         ourSong.stop();
+
         super.onBackPressed();
     }
 }
