@@ -8,51 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:968336840172:android:c92af032c28d177d",
-        "android_client_info": {
-          "package_name": "com.ceapata.agora"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "968336840172-p9flpmjimv8b26phs0ur4sui4amekdhc.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.ceapata.agora",
-            "certificate_hash": "427CD057352A249A33BB795C2FCA34EA890D1308"
-          }
-        },
-        {
-          "client_id": "968336840172-7rvch5ecg4ep4gp4blv1ehfnugh9rv78.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAlY08Uq5n3B12B3lrkZuoXuyCZZh71aBc"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:968336840172:android:43d18ebc10c9dd29",
         "android_client_info": {
           "package_name": "org.mobilesummer.ceapata.agora"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "968336840172-h2rl1la1eauetvdgmadd14umokenqvbp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.mobilesummer.ceapata.agora",
+            "certificate_hash": "427CD057352A249A33BB795C2FCA34EA890D1308"
+          }
+        },
         {
           "client_id": "968336840172-7rvch5ecg4ep4gp4blv1ehfnugh9rv78.apps.googleusercontent.com",
           "client_type": 3

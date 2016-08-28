@@ -40,6 +40,16 @@
             android:enabled="false"
             android:text="SEND"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp"
+            android:id="@+id/timer_play"
+            android:textColor="@color/indigo"
+            android:layout_alignParentBottom="true"
+           />
+
     </LinearLayout>
 
     <ProgressBar

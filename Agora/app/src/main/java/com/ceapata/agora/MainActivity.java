@@ -38,19 +38,19 @@ public class MainActivity extends AppCompatActivity {
         ourSong.start();
     }
 
-    protected void showPlay(View view){
+    public void showPlay(View view){
         Intent intent = new Intent(this, PlayActivity.class);
         ourSong.stop();
         startActivity(intent);
     }
 
-    protected void showHelp(View view){
+    public void showHelp(View view){
         Intent intent = new Intent(this, HelpActivity.class);
         ourSong.stop();
         startActivity(intent);
     }
 
-    protected void showExit(View view){
+    public void showExit(View view){
         finish();
         System.exit(0);
     }

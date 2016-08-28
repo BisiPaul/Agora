@@ -23,4 +23,5 @@
         <activity android:name="com.ceapata.agora.SignInActivity"></activity>
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

@@ -1,5 +1,6 @@
 package com.ceapata.agora;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.Color;
@@ -40,7 +41,7 @@ public class VoteActivity extends AppCompatActivity {
         final TextView timer = (TextView) findViewById(R.id.timer);
         timer.setTypeface(custom_font);
 
-        new CountDownTimer(22000, 1000) {
+        new CountDownTimer(12000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 timer.setText("seconds remaining to vote : " + millisUntilFinished / 1000);
@@ -52,6 +53,8 @@ public class VoteActivity extends AppCompatActivity {
 
                 likeButton.setClickable(false);
                 dislikeButton.setClickable(false);
+
+                showMain();
             }
         }.start();
 
@@ -131,5 +134,13 @@ public class VoteActivity extends AppCompatActivity {
         }
     };
 
+    private void showMain(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+    }
 }
 

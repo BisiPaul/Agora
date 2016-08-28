@@ -2,7 +2,9 @@ package com.ceapata.agora;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
@@ -126,7 +128,7 @@ public class PlayActivity extends AppCompatActivity
         mLinearLayoutManager.setStackFromEnd(true);
         mMessageRecyclerView.setLayoutManager(mLinearLayoutManager);
 
-// New child entries
+        // New child entries
         mFirebaseDatabaseReference = FirebaseDatabase.getInstance().getReference();
         mFirebaseAdapter = new FirebaseRecyclerAdapter<FriendlyMessage,
                 MessageViewHolder>(
@@ -223,6 +225,27 @@ public class PlayActivity extends AppCompatActivity
                 });
             }
         });
+
+        Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Caesar.ttf");
+        final TextView timer = (TextView) findViewById(R.id.timer_play);
+        timer.setTypeface(custom_font);
+
+        new CountDownTimer(300000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                timer.setText("seconds remaining : " + millisUntilFinished / 1000);
+            }
+
+            public void onFinish() {
+                mFirebaseDatabaseReference.setValue(null);
+                showVote();
+            }
+        }.start();
+    }
+
+    private void showVote() {
+        Intent intent = new Intent(this, VoteActivity.class);
+        startActivity(intent);
     }
 
     private void sendInvitation() {
